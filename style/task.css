@@ -7,7 +7,12 @@ body{
     margin-top: 1%;
     position: relative;
     display:grid;
+    width:98%;
+    left:1%;
     grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    
+    grid-gap: 0.5%;
+    align-content: space-evenly;
     grid-auto-flow:row dense;
     
     
@@ -27,7 +32,7 @@ body{
     margin: 0;
     
     text-align: center;
-    width: 109%;
+    width: 100%;
     
     display: block;
     
@@ -109,5 +114,10 @@ text-align: center;
     font-size:1em;
 }
 @media (max-width:300px){
-    
+    .items-container{
+        grid-template-columns: repeat(auto-fill,minmax(85px,1fr));
+        width:96%;
+        left:2%;
+        grid-gap: 1.5%;
+}
 }
